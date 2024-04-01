@@ -1,0 +1,68 @@
+/* Reset básico de CSS */
+
+/* Aplica un estilo uniforme a todos los elementos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Asegura que el padding y el borde no aumenten el ancho del elemento */
+  }
+  
+  /* Estilo básico del cuerpo del documento */
+  body {
+    font-family: Arial, sans-serif; /* Define la fuente predeterminada */
+    font-size: 16px; /* Tamaño de fuente predeterminado */
+    line-height: 1.6; /* Altura de línea */
+  }
+  
+  /* Corrige los márgenes en elementos de encabezado y de sección */
+  h1, h2, h3, h4, h5, h6,
+  p,
+  ul,
+  ol,
+  dl,
+  blockquote {
+    margin: 0;
+  }
+  
+  /* Establece el tamaño de fuente predeterminado para elementos de encabezado */
+  h1 {
+    font-size: 2em;
+  }
+  
+  h2 {
+    font-size: 1.5em;
+  }
+  
+  h3 {
+    font-size: 1.17em;
+  }
+  
+  /* Elimina la lista de viñetas y el relleno de la lista */
+  ul, ol {
+    list-style: none;
+    padding: 0;
+  }
+  
+  /* Establece el relleno de la lista a 0 y restablece el estilo de lista */
+  ul,
+  ol,
+  li {
+    padding: 0;
+    margin: 0;
+  }
+  
+  /* Elimina la decoración de enlace predeterminada */
+  a {
+    text-decoration: none;
+    color: inherit; /* Hereda el color del texto del elemento padre */
+  }
+  
+  /* Cambia el cursor al pasar el ratón sobre un enlace */
+  a:hover {
+    cursor: pointer;
+  }
+  
+  /* Añade una regla opcional para ocultar los elementos de la lista sin usar */
+  .hidden {
+    display: none;
+  }
