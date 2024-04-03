@@ -18,11 +18,11 @@
             iusto corrupti exercitationem, ipsa quas deserunt, rem molestias esse dolore necessitatibus nobis consectetur! Iure, 
             tempore? Et, deleniti.
         </h3>
-
+        <img src="./assets/wave.png" alt="Wave" class="backgrndImg1">
     </div>
     
     <div class="MiddleTerm">
-        <h3>Texto 2</h3>
+        <h3>Mis Tecnologias</h3>
         <div class="contenedor">
 
             <img src="/assets/CSS Logo.svg" alt="Imagen de Perfil" class="img2">
@@ -34,8 +34,29 @@
 
     <div class="BottomTerm">
 
-        <h3>Texto 3</h3>
+        <h3>¡Tus actividades favoritas!</h3>
+        
+        <form id="formulario">
+          <img src="./assets/rectangle.png" alt="sand" class="backgrndImg2">
+          <fieldset>
+              <element class="form-container">
+                <legend>Crea tu actividad</legend>
+                <label for="title">Título: </label>
+                <input type="text" id="title"
+                placeholder="Crea un título... 🖊">
+                <label for="descripcion">Descripción de la actividad: </label>
+                <textarea id="descripcion"
+                placeholder="Describe tu actividad favorita"
+                cols="30" rows="5">
+              </textarea>
+              <button id="addButton">Crear Actividad</button>
+            </fieldset>
+          </element>  
+        
+          
+        </form>
 
     </div>
+    <script src="./scripts/index.js"></script>
   </body>
 </html>

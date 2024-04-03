@@ -56,6 +56,26 @@ body{
     box-sizing: border-box;
 }
 
+#formulario {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */ 
+    margin: 20px; /* Elimina el margen por defecto del contenedor */
+}
+
+#formulario .form-container {
+    text-align: center; /* Alinea los elementos del formulario al centro */
+    display: flex;
+    flex-direction: column;
+    margin: 20px; /* Ubica los elementos verticalmente */
+}
+
+#formulario .addButton {
+    margin: 1000px; /* Espacio entre el cuadro de texto y el botón */
+}
+
+
+
 @media screen and (max-width: 600px){
     .img2 {
         width: 50px;
