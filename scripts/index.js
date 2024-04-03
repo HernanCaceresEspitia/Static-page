@@ -23,4 +23,20 @@ class Repository{
         this.activities.push(activity);
 
     }
+
+    deleteActivity(id){
+        this.activities = this.activities.filter((activity) => activity.id !== id);
+        return this.activities;
+    }
 }
+
+const repository = new Repository();
+
+console.log(repository);
+
+repository.createActivity('Estiudiar', 'Crear hábitos de estudio bien organizados', 'https://imagen.png');
+repository.createActivity('Jugar', 'Divertirse con amigos jugando Halo Online', 'https://Halo.png');
+repository.deleteActivity();
+
+console.log(repository.getAllActivities());
+console.log(repository.getAllActivities());

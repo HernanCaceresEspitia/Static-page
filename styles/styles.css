@@ -1,44 +1,96 @@
+
 body{
     background-color: black;
     color: antiquewhite;
     text-align: left;
 }
+
+header h1 {
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: red;
+    font-size: 50px;
+    font-style: italic;
+    position: relative;
+    top: 50px; /* Ajusta la distancia desde el borde superior */
+    left: 100px;
+}
+/*ESTILOS DE FONDO*/
+.backgrndImg2 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-image: url("./assets/fondo.jpg");
+    background-size: cover; /* La imagen de fondo cubrirá todo el tamaño del elemento */
+    background-position: center; /* La imagen de fondo estará centrada */
+}
+
+/* ESTILOS DE SECCIÓN PERSONAL*/
+.img1 {
+    width: 200px; /* Ajusta el ancho de la imagen según tus necesidades */
+    height: auto; /* Esto permite que la altura se ajuste automáticamente según el ancho especificado */
+    border-radius: 10px; /* Ajusta el radio de los bordes para hacerlos redondeados */
+    position: relative;
+    top: 0px; /* Ajusta la distancia desde el borde superior */
+    right: 70px; /* Ajusta la distancia desde el borde derecho */
+}
 .UpperTerm {
-    background-color: aqua;
+    background-color: rgba(0, 50, 200, 90%);
     width: auto;
     height: 300px;
-    margin: 100px 20px 20px 20px;
-    padding: 10px 30px 30px 10px;
+    margin: 25px 20px 20px 20px;
     color: black;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.left-section{
+    width: 50%;
+    height: 300px;
+    border-radius: 20px;
     text-align: center;
-    border-radius: 20px;
+    padding: 100px;
+    font-size: 25px;
 }
 
-.MiddleTerm{
-    background-color: blueviolet;
-    width: auto;
-    height: 400px;
-    padding: 10px 30px 30px 10px;
-    margin: 20px;
-    color: black;
-    text-align: justify;
-    border-radius: 20px;
-}
-
-.BottomTerm{
-    background-color: blue;
-    width: auto;
-    height: 400px;
-    padding: 10px 30px 30px 10px;
-    margin: 20px;
-    color: black;
-    color: black;
-    border-radius: 20px;
-    text-align: left;
+.UpperTerm .content img {
+    float: right;
 }
 .img1{
-
+    
     float: right;
+    width: 250px; /* Tamaño original de las imágenes */
+    transition: transform 0.3s ease;
+}
+.img1:hover {
+    transform: scale(1.2); /* Aumentamos el tamaño al 120% al pasar el mouse */
+}
+
+/*ESTILOS DE SECCION DE TECNOLOGÍAS FAVORITAS*/
+
+.MiddleTerm{
+    background-color: rgba(40, 0, 150, 80%);
+    width: auto;
+    height: 450px;
+    padding: 0px 0px 0px    0px;
+    margin: 10px;
+    color: black;
+    text-align: center;
+    border-radius: 25px;
+    font-size: 50px;
+}
+
+.h2 {
+    background-color: rgba(50, 10, 200, 100);
+    font-size: 50px;
+    padding: 20px;
+    border-radius: 25px;
+    margin: 0px;
+    width: auto;
 }
 
 .img2{
@@ -54,31 +106,86 @@ body{
     align-items: center;
     margin: 25px;
     box-sizing: border-box;
+    opacity: 100%;
 }
 
-#formulario {
-    display: flex;
-    justify-content: center; /* Centra horizontalmente */
-    align-items: center; /* Centra verticalmente */ 
-    margin: 20px; /* Elimina el margen por defecto del contenedor */
+.img2 {
+    width: 150px; /* Tamaño original de las imágenes */
+    transition: transform 0.3s ease; /* Agregamos una transición suave */
 }
 
-#formulario .form-container {
-    text-align: center; /* Alinea los elementos del formulario al centro */
+.img2:hover {
+    transform: scale(1.2); /* Aumentamos el tamaño al 120% al pasar el mouse */
+}
+
+/*ESTILOS DE CAJÓN DE ACTIVIDADES*/
+.BottomTerm {
+    background-color: rgba(40, 0, 150, 80%);
+    width: auto;
+    height: 1000px;
+    padding: 0px 0px 0px    0px;
+    margin: 10px;
+    color: black;
+    text-align: center;
+    border-radius: 25px;
+    font-size: 50px;
+    
+}
+
+.h3 {
+    width: auto;
+    background-color: rgba(100, 10, 255, 100);
+    font-size: 50px;
+    padding: 20px;
+    border-radius: 25px;
+    margin: 0px;
+}
+
+.formulario {
     display: flex;
     flex-direction: column;
-    margin: 20px; /* Ubica los elementos verticalmente */
+    align-items: flex-start;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    background-color:rgba(0, 50, 200, 90%);
+    max-width: 300px;
+    font-size: 20px;
 }
 
-#formulario .addButton {
-    margin: 1000px; /* Espacio entre el cuadro de texto y el botón */
+.formulario label {
+    margin-bottom: 5px;
 }
 
+.formulario input[type="text"],
+.formulario textarea {
+    width: calc(100% - 20px); /* Ajusta el ancho de los campos de entrada, menos el padding */
+    border: 1px solid #4917df;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
 
+.formulario textarea {
+    resize: none;
+}
 
-@media screen and (max-width: 600px){
-    .img2 {
-        width: 50px;
-        
-    }
+.formulario {
+    margin-left: 600px;
+    margin-top: 30px;
+    padding: 20px;
+}
+
+#addButton {
+    width: calc(100% - 20px); /* Ajusta el ancho del botón, menos el padding */
+    padding: 8px; /* Ajusta el padding del botón */
+    border: none;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+#addButton:hover {
+    background-color: #0056b3;
 }
