@@ -12,7 +12,7 @@ header h1 {
     font-size: 50px;
     font-style: italic;
     position: relative;
-    top: 50px; /* Ajusta la distancia desde el borde superior */
+    top: 50px; 
     left: 100px;
 }
 /*ESTILOS DE FONDO*/
@@ -24,18 +24,18 @@ header h1 {
     height: 100%;
     z-index: -1;
     background-image: url("./assets/fondo.jpg");
-    background-size: cover; /* La imagen de fondo cubrirá todo el tamaño del elemento */
-    background-position: center; /* La imagen de fondo estará centrada */
+    background-size: cover; 
+    background-position: center;
 }
 
 /* ESTILOS DE SECCIÓN PERSONAL*/
 .img1 {
-    width: 200px; /* Ajusta el ancho de la imagen según tus necesidades */
-    height: auto; /* Esto permite que la altura se ajuste automáticamente según el ancho especificado */
-    border-radius: 10px; /* Ajusta el radio de los bordes para hacerlos redondeados */
+    width: 200px; 
+    height: auto; 
+    border-radius: 10px; 
     position: relative;
-    top: 0px; /* Ajusta la distancia desde el borde superior */
-    right: 70px; /* Ajusta la distancia desde el borde derecho */
+    top: 0px; 
+    right: 70px; 
 }
 .UpperTerm {
     background-color: rgba(0, 50, 200, 90%);
@@ -120,6 +120,7 @@ header h1 {
 }
 
 /*ESTILOS DE CAJÓN DE ACTIVIDADES*/
+
 .BottomTerm {
     background-color: rgba(40, 0, 150, 80%);
     width: auto;
