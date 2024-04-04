@@ -177,6 +177,8 @@ header h1 {
 
 #addButton {
     width: calc(100% - 20px); /* Ajusta el ancho del botón, menos el padding */
+    margin-left: 0px;
+    margin-top: 15px;
     padding: 8px; /* Ajusta el padding del botón */
     border: none;
     background-color: #007bff;
@@ -189,3 +191,38 @@ header h1 {
 #addButton:hover {
     background-color: #0056b3;
 }
+
+.table-container {
+  width: 100%; /* Ajusta el ancho del contenedor al 100% del viewport */
+  display: flex; /* Usa flexbox para centrar el contenido */
+  font-size: 25px;
+  justify-content: center;
+   /* Centra horizontalmente el contenido */
+}
+#activityTable {
+    width: 50%;
+    border-collapse: collapse;
+    margin-top: 20px;
+   
+    
+  }
+  
+  #activityTable th, #activityTable td {
+    
+    border: 1px;
+    padding: 8px;
+    text-align: center;
+    background-color: aqua;
+    border-radius: 15px;
+    border: 1px solid blue;
+  }
+  
+  #activityTable th {
+    background-color: rgba(80, 10, 200, 95%);
+    border-radius: 15px;
+    }
+    
+    #activityTable img {
+    width: 100px; /* Ancho deseado */
+    height: auto; /* Altura automática para mantener la proporción */
+  }

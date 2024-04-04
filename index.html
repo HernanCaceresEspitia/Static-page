@@ -47,23 +47,43 @@
         
         <p class="h3">¡Tus actividades favoritas!</p>
         
-        <form class="formulario">
+        <section class="formulario">
           
                 <legend class="activityTitle">Crea tu actividad</legend>
                 <br>
-                <label for="title">Título: </label>
+                <label for="titulo">Título: </label>
                 <br>
                 <input type="text" class="title"
                 placeholder="Crea un título... 🖊">
-                <label for="descripcion">Descripción de la actividad: </label>
+                <label for="descripcion" class="description">Descripción de la actividad: </label>
                 <br>
                 <textarea id="descripcion"
                 placeholder="Describe tu actividad favorita"
                 cols="30" rows="5" style="resize: none;" ></textarea>
+                <br>
+                <label for="urlImagen">Ingresa la URL de tu imagen:</label>
+                <input type="text" id="urlOfImg" placeholder="Ingresa la url de la imagen">
+                <br>
                 <button id="addButton">Crear Actividad</button>
                 
-              </form>
-              
+        </section>
+        
+        <div class="table-container">
+          
+          <table id="activityTable">
+            <thead>
+              <tr>
+                <th>Título</th>
+                <th>Descripción</th>
+                <th>Imagen</th>
+              </tr>
+            </thead>
+            <tbody>
+              <!-- Las filas de la tabla se agregarán dinámicamente aquí -->
+            </tbody>
+          </table>
+        </div>
+
       </section>  
 
     </div>
